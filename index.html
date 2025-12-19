@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SURESHOTE BY SACHIN</title>
+<title>SURESHOT BY SACHIN</title>
 
 <style>
 body{
@@ -11,7 +11,6 @@ body{
  font-family: Arial, sans-serif;
  background:#000;
  color:white;
- background: radial-gradient(circle,#0b0b0b,#000);
  text-align:center;
 }
 
@@ -21,43 +20,50 @@ body{
  padding:20px;
 }
 
-/* LOGO */
 .logo{
- width:170px;
- height:170px;
+ width:160px;
+ height:160px;
  border-radius:50%;
  object-fit:cover;
  box-shadow:0 0 35px #0ff,0 0 60px #0ff inset;
  border:3px solid #00ffd5;
 }
 
-/* HEADING */
 h1{
- font-size:28px;
+ font-size:24px;
  text-shadow:0 0 15px #00ffe7;
 }
 
-/* VIP CARD */
 .card{
  background:#050505;
  border-radius:18px;
- padding:18px;
- margin-top:15px;
+ padding:16px;
+ margin-top:14px;
  border:1px solid #1affff4a;
  box-shadow:0 0 25px #00ffe73b inset;
 }
 
-/* Screenshot */
-.ss{
- width:100%;
- border-radius:16px;
- object-fit:contain;
- border:2px solid #00ffe7;
- background:#000;
- max-height:700px;
+.big-text{
+ font-size:18px;
+ line-height:26px;
 }
 
-/* Button */
+.count{
+ font-size:22px;
+ font-weight:bold;
+ color:#00ffea;
+ margin-top:6px;
+}
+
+.ss{
+ width:100%;
+ max-width:100%;
+ border-radius:14px;
+ border:2px solid #00ffe7;
+ display:block;
+ margin:auto;
+}
+
 .btn{
  display:block;
  background:#00ff7b;
@@ -70,7 +76,6 @@ h1{
  font-weight:bold;
 }
 </style>
-
 </head>
 
 <body>
@@ -83,14 +88,20 @@ h1{
 
 <div class="card">
  <h2>DAILY NUMBER SURE BET</h2>
- <p style="font-size:19px;">
+
+ <p class="big-text">
   100% ACCURENCY SURESHOT <br>
-  JOIN EASILY • EARN 5K - 100K DAILY
+  JOIN EASILY EARN 5K - 100K
  </p>
+
+ <div class="count">
+  🔥 Hurry! Joining closes in <span id="timer">15</span> sec
+ </div>
 </div>
 
 <div class="card">
  <h2>Winning Proof Screenshot</h2>
+
  <img src="assets/SCREENSHOT.jpg" class="ss">
 </div>
 
@@ -100,5 +111,26 @@ JOIN TELEGRAM NOW
 
 </div>
 
+<script>
+let time = 15;
+function startTimer(){
+ time = 15;
+ let t = setInterval(()=>{
+   document.getElementById("timer").innerText = time;
+   time--;
+   if(time < 0){
+     clearInterval(t);
+     startTimer();
+   }
+ },1000);
+}
+startTimer();
+
+// 5 second auto redirect
+setTimeout(function(){
+ window.location.href = "https://t.me/+B1_Clbluc_w1Y2Q1";
+},5000);
+</script>
+
 </body>
-</html>
+  </html>
