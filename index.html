@@ -1,60 +1,112 @@
-<!DO<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SURESHOTE BY SACHIN</title>
+
 <style>
 body{
-  margin:0;
-  background:black;
-  color:white;
-  font-family:Arial;
+ margin:0;
+ font-family: Arial, sans-serif;
+ background:#000;
+ color:white;
+ background: radial-gradient(circle,#111,#000);
+ text-align:center;
 }
+
 .container{
-  max-width:900px;
-  margin:auto;
-  text-align:center;
-  padding:20px;
+ max-width:900px;
+ margin:auto;
+ padding:20px;
 }
+
+/* LOGO */
 .logo{
-  width:220px;
-  border-radius:18px;
+ width:170px;
+ height:170px;
+ border-radius:50%;
+ object-fit:cover;
+ box-shadow:0 0 35px #0ff,0 0 60px #0ff inset;
+ border:3px solid #00ffd5;
 }
-.title{
-  margin-top:10px;
-  font-size:28px;
-  font-weight:700;
-  color:#00ffea;
+
+/* HEADINGS */
+h1{
+ font-size:28px;
+ text-shadow:0 0 15px #00ffe7;
 }
-.ss-box{
-  margin-top:25px;
-  background:#101010;
-  padding:10px;
-  border-radius:15px;
+
+/* VIP CARD */
+.card{
+ background:#0a0a0a;
+ border-radius:18px;
+ padding:18px;
+ margin-top:15px;
+ border:1px solid #1affff4a;
+ box-shadow:0 0 25px #00ffe73b inset;
 }
-.ss-box img{
-  width:100%;
-  border-radius:10px;
+
+/* Screenshot perfect fit */
+.ss{
+ width:100%;
+ max-height:650px;
+ border-radius:16px;
+ object-fit:contain;
+ border:2px solid #00ffe7;
+ background:#000;
+}
+
+/* Telegram Button */
+.btn{
+ display:block;
+ background:#00ff7b;
+ padding:15px;
+ margin-top:18px;
+ border-radius:30px;
+ font-size:18px;
+ color:black;
+ text-decoration:none;
+ font-weight:bold;
+}
+
+.time{
+ font-size:18px;
+ line-height:35px;
 }
 </style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-  <img class="logo" src="LOGO.png">
+<img src="assets/LOGO.png" class="logo">
 
-  <div class="title">
-    SURESHOTE BY SACHIN
-  </div>
+<h1>SURESHOTE BY SACHIN</h1>
 
-  <div class="ss-box">
-    <img src="SCREENSHOT.jpg">
-  </div>
+<div class="card">
+ <h2>DAILY PREDICTION TIME</h2>
+ <div class="time">
+ ⏰ 10:00 AM <br>
+ ⏰ 01:00 PM <br>
+ ⏰ 05:00 PM <br>
+ ⏰ 09:00 PM
+ </div>
+</div>
+
+<div class="card">
+ <h2>Winning Proof Screenshot</h2>
+ <img src="assets/SCREENSHOT.jpg" class="ss">
+</div>
+
+<a class="btn" target="_blank" href="https://t.me/+B1_Clbluc_w1Y2Q1">
+JOIN TELEGRAM NOW
+</a>
 
 </div>
 
 </body>
-</html>￼Enter
+   </html>
